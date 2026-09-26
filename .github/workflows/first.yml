@@ -48,6 +48,7 @@ jobs:
 
 
     build-job: 
+      needs: [lint-job, test-job]
       runs-on: ubuntu-latest
       steps: 
         - name: checkout
